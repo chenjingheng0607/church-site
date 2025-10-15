@@ -39,3 +39,11 @@ header nav :where(a,button) {
 header {
   transition: background-color 240ms ease, backdrop-filter 240ms ease;
 }
+
+/* Utility: hide native scrollbars while keeping scroll functionality */
+.no-scrollbar {
+  scrollbar-width: none; /* Firefox */
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
