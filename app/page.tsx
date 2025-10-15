@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Services from "./components/Services";
+import OurTheme from "./components/OurTheme";
 
 export default function Home() {
   return (
@@ -24,6 +25,8 @@ export default function Home() {
       </section>
       <main>
         <Services />
+        {/* New section below */}
+        <OurTheme />
       </main>
     </div>
   );
