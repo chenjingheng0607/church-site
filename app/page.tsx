@@ -1,6 +1,7 @@
-import Image from "next/image";
 import Services from "./components/Services";
 import OurTheme from "./components/OurTheme";
+import PastorMessage from "./components/PastorMessage";
+import PrayerBoard from "./components/PrayerBoard";
 
 export default function Home() {
   return (
@@ -27,6 +28,8 @@ export default function Home() {
         <Services />
         {/* New section below */}
         <OurTheme />
+        <PastorMessage />
+        <PrayerBoard />
       </main>
     </div>
   );

@@ -1,6 +1,6 @@
 export default function OurTheme() {
   return (
-    <section className="relative w-full py-16 bg-cover bg-center" style={{ backgroundImage: "url('/theme.jpg')" }}>
+    <section className="relative w-full py-32 bg-cover bg-center" style={{ backgroundImage: "url('/theme.jpg')" }}>
       <div className="absolute inset-0 bg-black/75"></div>
       <div className="relative z-10 w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
         <div>

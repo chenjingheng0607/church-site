@@ -49,7 +49,7 @@ export default function Services() {
   }, []);
 
   return (
-    <section className="relative w-full py-16" style={{ backgroundColor: '#F8F4EA' }}>
+    <section className="relative w-full py-32" style={{ backgroundColor: '#F8F4EA' }}>
       <div className="w-[80%] mx-auto">
         <div className="text-left mb-12 pl-4">
           <h2 className="text-4xl font-bold mb-4">Our Services</h2>
