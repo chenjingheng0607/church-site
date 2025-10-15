@@ -74,7 +74,7 @@ export default function Services() {
                   fill
                   className="object-cover"
                 />
-                <div className="absolute inset-0 bg-black/50 p-6 flex flex-col justify-end text-white">
+                <div className="absolute inset-0 bg-black/50 pt-25 p-20 pr-40 flex flex-col justify-start items-start text-left text-white">
                   <h3 className="text-2xl font-semibold mb-2">{service.title}</h3>
                   <p className="mb-4">{service.description}</p>
                   <a
