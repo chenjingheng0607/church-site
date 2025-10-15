@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { CirclePlus } from 'lucide-react';
 
 type Prayer = { id: string; name: string | null; message: string; color?: string | null; created_at: string };
 
@@ -95,18 +96,14 @@ export default function PrayerBoard() {
         ) : error ? (
           <div className="px-4 text-red-600">{error}</div>
         ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 px-4">
             <button
               type="button"
               onClick={() => setShowModal(true)}
-              className="relative bg-white border-2 border-dashed border-gray-300 rounded-md p-5 min-h-[160px] grid place-items-center text-gray-600 hover:text-black hover:border-gray-400 transition-colors"
+              className="relative p-5 min-h-[160px] grid place-items-center text-gray-600 hover:text-black hover:border-gray-400 transition-colors"
+              aria-label="Add prayer"
             >
-              <span className="inline-flex items-center gap-2 text-sm font-semibold">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
-                  <path fillRule="evenodd" d="M12 3.75a.75.75 0 0 1 .75.75v6.75H19.5a.75.75 0 0 1 0 1.5h-6.75V19.5a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5A.75.75 0 0 1 12 3.75Z" clipRule="evenodd" />
-                </svg>
-                Add Prayer
-              </span>
+              <CirclePlus className="h-20 w-20 text-white" aria-hidden="true" />
             </button>
             {prayers.map((p, idx) => (
               <article
