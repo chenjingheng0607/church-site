@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { useCallback, useRef } from 'react';
+import { CircleArrowLeft, CircleArrowRight } from 'lucide-react';
 
 const services = [
   {
@@ -52,8 +53,8 @@ export default function Services() {
     <section className="relative w-full py-32" style={{ backgroundColor: '#F8F4EA' }}>
       <div className="w-[80%] mx-auto">
         <div className="text-left mb-12 pl-4">
-          <h2 className="text-4xl font-bold mb-4">Our Services</h2>
-          <p className="text-xl text-gray-600">
+          <h2 className="text-[#E67E22] text-4xl font-bold mb-4">Our Services</h2>
+          <p className="text-xl text-[#67728A]">
             Find the service that's right for you and your family
           </p>
         </div>
@@ -75,11 +76,11 @@ export default function Services() {
                   className="object-cover"
                 />
                 <div className="absolute inset-0 bg-black/50 pt-25 p-20 pr-40 flex flex-col justify-start items-start text-left text-white">
-                  <h3 className="text-2xl font-semibold mb-2">{service.title}</h3>
+                  <h3 className="text-2xl font-semibold mb-2 text-[#B3583C]">{service.title}</h3>
                   <p className="mb-4">{service.description}</p>
                   <a
                     href={service.link}
-                    className="inline-block bg-white/50 text-white px-6 py-2 rounded-md hover:bg-white/60 transition-colors"
+                    className="inline-block bg-[#E67E22]/50 text-white px-6 py-2 rounded-md hover:bg-white/60 transition-colors"
                   >
                     Know More
                   </a>
@@ -93,21 +94,15 @@ export default function Services() {
               type="button"
               aria-label="Previous"
               onClick={() => scrollByCard(-1)}
-              className="h-10 w-10 rounded-full bg-black/60 text-white grid place-items-center hover:bg-black/70 transition-colors"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
-                <path fillRule="evenodd" d="M15.78 5.22a.75.75 0 0 1 0 1.06L10.06 12l5.72 5.72a.75.75 0 1 1-1.06 1.06l-6.25-6.25a.75.75 0 0 1 0-1.06l6.25-6.25a.75.75 0 0 1 1.06 0Z" clipRule="evenodd" />
-              </svg>
+              <CircleArrowLeft className="h-10 w-10 text-[#B3583C] grid place-items-center hover:text-black/70 transition-colors"/>
             </button>
             <button
               type="button"
               aria-label="Next"
               onClick={() => scrollByCard(1)}
-              className="h-10 w-10 rounded-full bg-black/60 text-white grid place-items-center hover:bg-black/70 transition-colors"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
-                <path fillRule="evenodd" d="M8.22 18.78a.75.75 0 0 1 0-1.06L13.94 12 8.22 6.28a.75.75 0 0 1 1.06-1.06l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z" clipRule="evenodd" />
-              </svg>
+              <CircleArrowRight className="h-10 w-10 text-[#B3583C] grid place-items-center hover:text-black/70 transition-colors"/>
             </button>
           </div>
         </div>
