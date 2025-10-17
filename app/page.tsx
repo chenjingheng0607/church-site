@@ -2,6 +2,7 @@ import Services from "./components/Services";
 import OurTheme from "./components/OurTheme";
 import PastorMessage from "./components/PastorMessage";
 import PrayerBoard from "./components/PrayerBoard";
+import Calendar from "./components/Calendar";
 
 export default function Home() {
   return (
@@ -30,6 +31,7 @@ export default function Home() {
         <OurTheme />
         <PastorMessage />
         <PrayerBoard />
+        <Calendar />
       </main>
     </div>
   );
