@@ -38,11 +38,11 @@ export default function PastorMessage() {
 
           <article className="p-6 md:p-8 self-center">
             <h3 className="text-4xl font-semibold mb-2">Pastor Elson Chou</h3>
-            <p className="text-gray-700 mb-6">
+            <p className="text-white mb-6">
             Rev. Elson Chou has been faithfully serving in ministry for over 18 years. With a heart for families and discipleship, he believes in raising up strong generations of believers who love God and serve their communities. He is passionate about preaching the Word of God with clarity and compassion.
             </p>
             <div className="border-t border-gray-200 pt-6">
-              <p className="text-gray-900 italic leading-relaxed">
+              <p className="text-white italic leading-relaxed">
                 “Dear Church Family, remember that no matter what challenges you face, God is always with you. Lean on His promises and you will find peace beyond understanding. Keep walking in faith — He will never fail you.”
               </p>
             </div>
