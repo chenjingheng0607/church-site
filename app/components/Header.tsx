@@ -21,10 +21,12 @@ export default function Header() {
   return (
     <header className={`fixed w-full z-50 transition-all duration-300 pt-4 px-40 ${scrolled ? "bg-white/80 backdrop-blur-md" : "bg-transparent"}`}>
       <div className="w-full px-8 py-6 flex items-center">
-        <img src="/church-logo.png" alt="Church Logo" className="h-16 w-auto" />
+        <Link href="/" aria-label="Back to Homepage" className="flex-shrink-0 pr-5">
+          <img src="/church-logo.png" alt="Church Logo" className="h-10 w-auto" />
+        </Link>
         <nav className="flex gap-8 mx-auto">
           <Link href="#about" className={`text-base font-medium hover:text-white/80 ${scrolled ? "text-[#B3583C]" : "text-white"}`}>About Us</Link>
-          <Link href="#services" className={`text-base font-medium hover:text-white/80 ${scrolled ? "text-[#B3583C]" : "text-white"}`}>Service</Link>
+          <Link href="/servicepage" className={`text-base font-medium hover:text-white/80 ${scrolled ? "text-[#B3583C]" : "text-white"}`}>Service</Link>
           <Link href="#sermons" className={`text-base font-medium hover:text-white/80 ${scrolled ? "text-[#B3583C]" : "text-white"}`}>Sermon</Link>
           <Link href="#ministries" className={`text-base font-medium hover:text-white/80 ${scrolled ? "text-[#B3583C]" : "text-white"}`}>Ministries</Link>
           <Link href="#resources" className={`text-base font-medium hover:text-white/80 ${scrolled ? "text-[#B3583C]" : "text-white"}`}>Resources</Link>
