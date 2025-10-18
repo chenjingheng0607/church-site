@@ -85,8 +85,8 @@ export default function PrayerBoard() {
     <section aria-labelledby="prayer-board-title" className="relative w-full py-32 bg-cover bg-center" style={{ backgroundImage: "url('/prayer.jpg')" }}>
       <div className="w-[80%] mx-auto">
         <header className="text-left mb-12 pl-4">
-          <h2 id="prayer-board-title" className="text-4xl font-bold mb-4">Prayer Board</h2>
-          <p className="text-xl text-gray-600 max-w-3xl">Share a prayer or lift up others. Some names are hidden as Anonymous.</p>
+          <h2 id="prayer-board-title" className="text-4xl font-bold mb-4 text-[#FF7800]">Prayer Board</h2>
+          <p className="text-xl text-white max-w-3xl">Share your prayers anonymously and join others in lifting them up. This is a space to encourage one another, believe together, and be reminded that you are not alone.</p>
         </header>
 
         
